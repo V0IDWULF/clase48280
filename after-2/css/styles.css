@@ -1,0 +1,104 @@
+/*estilos globales para funcionamiento en todods los navegadores*/
+* {
+    margin:0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /*para poder usar rem como unidad de letras y equivalga 1 rem=10 px*/
+}
+
+img {
+    max-width: 100%;
+}
+
+/*estilos propios*/
+/*mobile first*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.navegacion {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navegacion li a{
+    text-decoration: none;
+    color: rgba(8, 173, 71, 0.616);
+    font-size: 1.8rem;
+    gap: 3rem;
+}
+
+#descripciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+/*estilos para pantallas mas grandes*/
+
+@media (min-width:768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/*estilos de section*/
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.caja-larga img {
+    height: 25rem;
+    width: 40rem;
+}
+
+.caja-larga p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.caja-larga {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*pantalla pc*/
+
+@media (min-width:1024px) {
+    .caja-larga {
+        flex-direction: row;
+    }
+
+    .caja-larga img{
+        width: 40%;
+        height: 20rem;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+        background-color: black;
+        color: white;
+    }
+}
+
+footer p{
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    background-color: red;
+    padding: 2rem;
+    text-align: center;
+}

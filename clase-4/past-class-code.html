@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo-coderhouse.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+    </style>
+
+
+    <link rel="stylesheet" href="css/styles.css"> <!--forma recomenadada css-->
+    <title>Clase 2</title>
+
+    <!--forma no recomendada
+        <style>
+        p {
+            color: blue;
+        }
+    </style>-->
+
+</head>
+<body>
+    
+<header>
+    <a href="index.html">
+        <img class="logo"  src="img/logo-coderhouse.png" alt="Logo Coderhouse" title="Este es el logo de Coderhouse">
+    </a>
+
+    <h1 class="color-marron">Bienvenidos a coderhouse</h1>
+
+    <!--Estructura de un menu de navegación-->
+    <nav>
+        <ul class="menu__nav">
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>Nuestra historia</li>
+            <li>Galería de imágenes</li>
+            <li>Donde estamos</li>
+            <li>
+                <a href="pages/contacto.html">Contacto</a>
+            </li>
+
+            <li>
+                <a href="#footer">Ir al footer</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="productos">
+    <!--card 1-->
+    <!--div es el bloque-->
+    <div class="card">
+        <img class="card__imagen" src="../clase-4/img/ath-front-large.webp" alt="Remera HTML5">
+        <!--la imagen es un elemento-->
+        <h4 class="card__titulo">Remera HTML</h4> <!--h4 es un elemento-->
+
+        <p class="card__descripcion"> Esta remera está hecha de algodón y está disponible en distintas tallas.</p>
+        
+        <p class="card__precio" >$5.000</p>
+
+        <p class="card__oferta">50% de descuento</p>
+        <button class="boton">Agregar al carrito</button>
+    </div>
+
+
+</section>
+
+<section class="">
+
+</section>
+
+<footer id="footer">
+    <p>Todos los derechos reservados. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt consequatur quisquam, nulla earum placeat rerum perferendis dolores in perspiciatis quidem voluptatum laudantium modi? Unde eius ut ex delectus consectetur?</p>
+</footer>
+
+</body>
+</html>

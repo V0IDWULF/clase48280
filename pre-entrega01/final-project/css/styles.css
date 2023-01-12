@@ -1,0 +1,634 @@
+
+header {
+    display: flex;
+    position: sticky;
+    top:1rem;
+    background-color: rgba(27, 51, 85, 0.9);
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+.logo {
+    display: flex;
+    width: 65%;
+    transition: 0.4s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.menu__nav {
+    text-align: center;
+}
+
+.menu__nav li {
+    display: inline;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px;
+}
+
+#title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+body {
+    background-color: #192D4B;
+    color: #fff;
+    text-shadow: 10px 10px 30px black;
+    background-image: url(../img/wallpaper.jpg);
+    background-size: cover;
+    justify-content: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+    
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 10px 10px 30px black;
+    text-align: center;
+}
+
+h2 {
+    color: #FAAF0B;
+    text-shadow: 10px 10px 30px black;
+}
+
+h3 {
+    color:#fff;
+    text-shadow: 10px 10px 20px black;
+}
+
+h4 {
+    color: #8AFFFF;
+    text-shadow: 10px 10px 10px black
+
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #87C8FA;
+    transition: 0.4s;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+#media {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.videotitle {
+    text-align: center;
+}
+
+.ft {
+    text-align: justify;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-self: flex-start;
+    inline-size: 30%;
+    border: #fff;
+    border-style: hidden;
+    position: absolute;
+    right: 1rem;
+    top: 30rem;
+}
+
+.feat1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.featdesc1 {
+    position:absolute;
+    bottom: 0;
+    margin: 1rem;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.feat1:hover .featdesc1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.news {
+    background-color: rgba(27, 51, 85, 0.6);
+    display: inline-block;
+    inline-size: 50%;
+    text-align: justify;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    image-resolution: 1rem;
+    list-style: square;
+    border-color: #192D4B;
+    border-style: ridge;
+    
+}
+
+
+/*<------------Factions Page-------------->*/
+
+
+.factions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 1rem;
+    padding-top: 2rem;  
+}
+
+.factions2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    padding-right: 2rem;
+}
+
+.factimg1 {
+    transition: 0.5s;
+    width: 20%;
+}
+
+
+.factdesc1 {
+    inline-size: 43%;
+    padding-top: 4rem;
+    justify-content: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.factions:hover .factdesc1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.factimg2 {
+    width: 20%;
+    transition: 0.5s;
+}
+
+.factimg1:hover{
+    transform: scale(1.1);
+}
+
+.factions2:hover .factdesc1 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.factimg2:hover {
+    transform: scale(1.1);
+}
+
+.factdesc1 {
+    font-style: italic;
+    font-size: x-large;
+}
+
+/*<------------Races Page-------------->*/
+
+.alliance{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+}
+
+.horde{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 2rem;
+    text-align: justify;
+
+}
+
+.description {
+    inline-size: 50%;
+    background-color: rgba(6, 93, 216, 0.3);
+    padding: 1rem;
+    border-style: ridge;
+    border-color: rgba(6, 93, 216, 0.5);
+}
+
+.descriptionh {
+    inline-size: 50%;
+    background-color: rgba(240, 5, 5, 0.3);
+    padding: 1rem;
+    border-style: ridge;
+    border-color: rgba(240, 5, 5, 0.5);
+}
+
+
+/*<------------Classes Page-------------->*/
+
+.fila__1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spec11 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 50%;
+}
+
+.spec1:hover .spec11 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg1 {
+    transition: 0.5s;
+}
+
+.specimg1:hover {
+    transform: scale(1.2);
+
+}
+
+
+.spec12 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 50%;
+}
+
+.spec2:hover .spec12 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg2 {
+    transition: 0.5s;
+}
+
+.specimg2:hover {
+    transform: scale(1.2);
+
+}
+
+
+.spec13 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 50%;
+}
+
+.spec3:hover .spec13 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg3 {
+    transition: 0.5s;
+}
+
+.specimg3:hover {
+    transform: scale(1.2);
+
+}
+
+.spec14 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 50%;
+}
+
+.spec4:hover .spec14 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg4 {
+    transition: 0.5s;
+}
+
+.specimg4:hover {
+    transform: scale(1.2);
+}
+
+.spec15 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 50%;
+}
+
+.spec5:hover .spec15 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg5 {
+    transition: 0.5s;
+}
+
+.specimg5:hover {
+    transform: scale(1.2);
+}
+
+.fila__2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.spec16 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    margin: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 76%;
+}
+
+.spec6:hover .spec16 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg6 {
+    transition: 0.5s;
+}
+
+.specimg6:hover {
+    transform: scale(1.2);
+
+}
+
+.spec17 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    margin: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 76%;
+}
+
+.spec7:hover .spec17 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg7 {
+    transition: 0.5s;
+}
+
+.specimg7:hover {
+    transform: scale(1.2);
+
+}
+
+.spec18 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    margin: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 76%;
+}
+
+.spec8:hover .spec18 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg8 {
+    transition: 0.5s;
+}
+
+.specimg8:hover {
+    transform: scale(1.2);
+
+}
+
+.spec19 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    margin: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 76%;
+}
+
+.spec9:hover .spec19 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg9 {
+    transition: 0.5s;
+}
+
+.specimg9:hover {
+    transform: scale(1.2);
+
+}
+
+.spec20 {
+    display: inline-block;
+    position: absolute;
+    align-items: center;
+    text-align:justify;
+    text-shadow: 10px 10px 10px black;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    background-color:rgba(27, 51, 85, 0.9);
+    border-style: ridge;
+    border-color: #192D4B;
+    padding: 1rem;
+    margin: 1rem;
+    inline-size: 60%;
+    list-style-type:circle;
+    left: 15%;
+    top: 76%;
+}
+
+.spec10:hover .spec20 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.specimg10 {
+    transition: 0.5s;
+}
+
+.specimg10:hover {
+    transform: scale(1.2);
+
+}
+
+
+/*<------------Locations Page-------------->*/
+
+.north {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*<------------Store Page-------------->*/
+
+.construction{
+    display: flex;
+    justify-content: center;
+}
+
+.social__nav li {
+    display: inline;
+    padding: 1rem;
+}

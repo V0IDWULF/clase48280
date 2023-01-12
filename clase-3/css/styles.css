@@ -1,0 +1,71 @@
+/*Reseteo CSS*/
+/* * {
+    margin: 0;
+    padding: 0;
+}
+*/
+
+a {
+    text-decoration: none;
+}
+
+.color-marron {
+    color: brown;
+    font-weight: normal;
+    text-align: center;
+}
+
+h1  {
+    color: red;
+}
+
+/*todas las class css se inician con un punto*/   
+.color-morado{
+    color: purple;
+    line-height: 1.8;
+}
+.letra-grande{
+    font-size: 40px;
+}
+/*el id en CSS se representa en con un #*/
+#section-tabla {
+    background-color: cadetblue !important; /* tienen prioridad maximo pero maximo 5 important */
+}
+
+#section-tabla {
+    /*background-color: red;*/
+    background-image: url(../img/logo-coderhouse.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#lista-anidada {
+    background-color: aqua;
+}
+
+div {
+    color: pink;
+}
+
+/* el ID tiene mas preferencia que la clase ID> class > etiqueta */
+#color-verde {
+    color: green;
+}
+
+ul,ol {
+    list-style: none;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pixel {
+    font-size: 16px;
+}
+
+.rem {
+    font-size: 16;
+}
+/* las medidas rem se adaptan a la raiz del html y su monitor, se ajusta mejor que Pixel */

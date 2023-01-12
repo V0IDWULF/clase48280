@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo-coderhouse.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+    </style>
+
+
+    <link rel="stylesheet" href="css/styles.css"> <!--forma recomenadada css-->
+    <title>Clase 2</title>
+
+    <!--forma no recomendada
+        <style>
+        p {
+            color: blue;
+        }
+    </style>-->
+
+</head>
+<body>
+    
+<header>
+    <a href="index.html">
+        <img src="img/logo-coderhouse.png" alt="Logo Coderhouse" title="Este es el logo de Coderhouse">
+    </a>
+
+    <h1 class="color-marron">Bienvenidos a coderhouse</h1>
+
+    <!--Estructura de un menu de navegación-->
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+
+            <li>Nuestra historia</li>
+            <li>Galería de imágenes</li>
+            <li>Donde estamos</li>
+            <li>
+                <a href="pages/contacto.html">Contacto</a>
+            </li>
+
+            <li>
+                <a href="#footer">Ir al footer</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section>
+<!-- Definir el tipo de lista que quieren -->
+<!--Colocar los items dentro de cada <li>-->
+    
+    <!-- Lista desordenada-->
+    <ul>
+        <li style="color: blueviolet;">Tomate</li> <!--mala practica de css-->
+        <li>Cafe</li>
+        <li>Mate</li>
+    </ul>
+</section>
+
+<section>
+    <!--Lista ordenada-->
+    <ol id="color-verde" class="color-morado">
+        <li>Agua</li>
+        <li>Agregar cafe</li>
+        <li>Servir</li>
+    </ol>
+</section>
+
+<section id="lista-anidada">
+    <!--Anidar Listas-->
+    <ul class="color-morado letra-grande">
+        <!--<li> 1-->
+        <li>Computadoras portátiles
+            <ul>
+                <li>Procesador I4</li>
+                <li>Procesador I5</li>
+            </ul>
+        </li>
+
+        <!--<li> 2-->
+        <li>Computadoras de escritorio:
+            <ul>
+                <li>Pentium</li>
+                <li>Celeron</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section id="section-tabla">
+    <table border="10" cellpadding="20" cellspacing="20">
+        <!--Titulos de la tabla-->
+        <th>Academia</th>
+        <th>Profesor</th>
+        <th>Tutores</th>
+
+        <!--Primera fila-->
+        <tr>
+            <td>Coderhouse</td>
+            <td>Daniel</td>
+            <td>Wanda</td>
+        </tr>
+
+        <!--Segunda fila-->
+        <tr>
+            <td>Coderhouse</td>
+            <td>Niko</td>
+            <td>Brian</td>
+        </tr>
+
+    </table>
+</section>
+
+<section>
+    <div>
+        <p>soy un parrafo con herencia</p>
+        
+        <h3>Tambien heredo el rosa</h3>
+
+        <h4>Tambien lo heredo</h4>
+    </div>
+</section>
+
+<p class="pixel">Soy un parrafo en pixeles</p>
+<p class="rem">soy un parrafo en rem</p>
+<footer id="footer">
+    <p>Todos los derechos reservados. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sunt consequatur quisquam, nulla earum placeat rerum perferendis dolores in perspiciatis quidem voluptatum laudantium modi? Unde eius ut ex delectus consectetur?</p>
+</footer>
+
+</body>
+</html>

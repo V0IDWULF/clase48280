@@ -1,0 +1,77 @@
+
+/*codigo de #productos*/
+.card {
+    background-color: orange;
+    /*padding-top: 3rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;*/
+
+    /*atajo clockwise*/
+    /*padding:3rem 2rem 5rem 4rem;*/
+
+    /*atajo 2 igual en 2 lados (top bottom y left right*/
+    /*padding: 3rem 4rem;/*
+
+    /*atajo 3 igual en todos los lados*/
+    padding: 3rem;
+
+    /*margin*/
+    /*margin-top: 5rem;
+    margin-bottom: 5rem;*/
+    
+    margin-top: 60px;
+
+    /*ancho*/
+    width: 300px;
+
+    height: 450px;
+
+    /*tipo de borde, grosor, color*/
+    border: solid 3px red;
+
+    position:relative;
+
+}
+
+header {
+    position:fixed;
+    width:100%;
+    background-color:green; 
+    z-index: 1;  /*para superponer*/ 
+}
+
+.card__oferta {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    background-color: green;
+    z-index: 0;  /*para poner detras*/
+
+}
+
+.card__imagen {
+    width: 200px;
+
+}
+/*agregar siempre max width 100% para que se ajuste la imagen*/
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    
+}
+
+.menu__nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+.menu__nav {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}

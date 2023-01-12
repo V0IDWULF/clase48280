@@ -1,0 +1,130 @@
+
+
+/*GRIDS POR AREAS*/
+/* GRID MOBILE FIRST */
+
+/*CODIGO PARA CELULAR*/
+/*IMPLICITAMENTE, ESTE CÓDIGO VA DESDE 0PX HASTA 767PX*/
+#grilla {
+    display: grid;
+    grid-template-areas:
+        "menu cabecera cabecera"
+        "menu productos publicidad"
+        "menu servicios publicidad"
+        "menu footer footer";
+    grid-template-rows: 100px 1fr 1fr 75px; 
+    grid-template-columns: 20% auto 15%;
+
+    column-gap: 10px;
+    row-gap: 10px;
+
+    height: 100vh;/*vh = viewport height*/
+}
+
+
+.border {
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+/*Cuando la pantalla mida COMO MINIMO 768 PX (TABLET) HAGA ESTE CÓDIGO*/
+/*En mobile first dentro de las media queries solo escribir lo que SE NECESITA CAMBIAR*/
+@media screen and (min-width: 768px) {
+	#grilla {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .border {
+        border: 4px solid black;
+        background-color: blue;
+    }
+}
+
+/*Cuando la pantalla mida COMO MINIMO 1024PX (NOTEBOOKS Y PCs chicas) HAGA ESTE CÓDIGO*/
+
+@media screen and (min-width: 1024px) {
+	#grilla {
+            grid-template-columns: repeat(3, 1fr);
+      }
+      .border {
+    	border: 4px solid black;
+    	background-color: green;
+     }
+}
+
+header {
+    grid-area: cabecera;
+}
+
+footer {
+    grid-area: footer;
+}
+
+section#productosgrid {
+    grid-area: productos;     
+}
+
+section#servicios {
+    grid-area: servicios;     
+}
+
+nav {
+    grid-area: menu;
+}
+
+aside {
+    grid-area: publicidad;
+}
+
+
+/*mobile first*/
+
+#body-ejemplo {
+    display: grid;
+    grid-template-areas:
+    "cabecera"
+    "galeria"
+    "banners"
+    "footer" ;
+    grid-template-columns: repeat(1, 1fr);
+    background-color: red;
+}
+
+#header-profe {
+    display: flex;
+    grid-area: cabecera-profe;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 3rem;
+}
+
+.nav-profe {
+    list-style: none;
+}
+
+.nav-profe li a {
+    color: white;
+}
+
+/*estilos galeria*/
+
+#galeria-profe {
+    grid-area: galeria;
+}
+
+#galeria-profe h2 {
+    text-align: center;
+}
+
+.fotos {
+    width: 20rem;
+    height: 10rem;
+}
+
+#banners-profe {
+    grid-area: banners;
+}
+
+#footer-profe {
+    grid-area: footer;
+}
